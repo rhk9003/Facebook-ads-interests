@@ -2,6 +2,9 @@ import streamlit as st
 import google.generativeai as genai
 import PyPDF2
 import os
+import pandas as pd
+import io
+import re
 
 # --- 頁面設定 ---
 st.set_page_config(
@@ -105,6 +108,63 @@ def get_gemini_response(api_key, model_name, db_context, user_input, user_files_
     except Exception as e:
         return f"API 呼叫錯誤: {str(e)}"
 
+def parse_markdown_table_to_df(markdown_text):
+    """
+    從 Markdown 文本中解析出表格並轉換為 Pandas DataFrame。
+    """
+    try:
+        # 使用正規表達式尋找 Markdown 表格結構
+        # 尋找以 | 開頭和結尾的行
+        lines = markdown_text.split('\n')
+        table_lines = [line.strip() for line in lines if line.strip().startswith('|') and line.strip().endswith('|')]
+        
+        if len(table_lines) < 3:
+            return None # 沒有找到有效的表格
+
+        # 1. 處理標題列 (第一行)
+        header_line = table_lines[0]
+        # 移除前後的 | 並以 | 分割，去除空白
+        headers = [h.strip() for h in header_line.strip('|').split('|')]
+
+        # 2. 略過分隔列 (第二行，通常是 |---|---|)
+        
+        # 3. 處理數據列 (從第三行開始)
+        data = []
+        for line in table_lines[2:]:
+            # 簡單檢查這行是不是分隔線 (有些 Markdown 會有多個分隔線或錯置)
+            if '---' in line:
+                continue
+                
+            values = [v.strip() for v in line.strip('|').split('|')]
+            
+            # 確保欄位數量與標題一致 (處理可能有的空欄位)
+            if len(values) == len(headers):
+                data.append(values)
+            elif len(values) > len(headers):
+                 # 如果數據列比標題多，截斷
+                 data.append(values[:len(headers)])
+            else:
+                # 如果數據列比標題少，補空值
+                values += [''] * (len(headers) - len(values))
+                data.append(values)
+
+        if not data:
+            return None
+
+        df = pd.DataFrame(data, columns=headers)
+        return df
+    except Exception as e:
+        print(f"解析表格時發生錯誤: {e}")
+        return None
+
+def convert_df_to_excel(df):
+    """將 DataFrame 轉換為 Excel 的 Bytes"""
+    output = io.BytesIO()
+    with pd.ExcelWriter(output, engine='openpyxl') as writer:
+        df.to_excel(writer, index=False, sheet_name='受眾標籤建議')
+    processed_data = output.getvalue()
+    return processed_data
+
 # --- 主畫面 UI ---
 st.title("📂 Meta 廣告受眾戰略顧問 (Direct Read)")
 st.markdown("""
@@ -168,6 +228,25 @@ else:
                 user_files_content
             )
             
-            # 顯示結果
+            # 顯示 Markdown 結果
             st.markdown("### 📊 AI 戰略分析報告")
             st.markdown(result)
+            
+            # --- 嘗試解析表格並提供下載 ---
+            df = parse_markdown_table_to_df(result)
+            
+            if df is not None:
+                st.markdown("---")
+                st.success("🎉 已成功提取受眾標籤表格！")
+                
+                excel_data = convert_df_to_excel(df)
+                
+                st.download_button(
+                    label="📥 下載受眾標籤 Excel 清單",
+                    data=excel_data,
+                    file_name='meta_audience_suggestions.xlsx',
+                    mime='application/vnd.openxmlformats-officedocument.spreadsheetml.sheet',
+                    type="primary"
+                )
+            else:
+                st.info("💡 提示：本次回應中未偵測到標準表格，故無法提供 Excel 下載。")
