@@ -17,11 +17,10 @@ with st.sidebar:
     # API Key 設定
     api_key = st.text_input("Gemini API Key", type="password", help="請輸入 Google AI Studio API Key")
     
-    # 模型選擇
-    model_options = ["gemini-1.5-pro", "gemini-1.5-flash", "gemini-2.0-flash-exp"]
-    selected_model = st.selectbox("選擇模型版本", model_options, index=0)
-    custom_model = st.text_input("或輸入自定義模型名稱 (如 gemini-2.5-pro)", "")
-    model_version = custom_model if custom_model else selected_model
+    # 模型設定 (已鎖定)
+    st.markdown("### 🤖 模型版本")
+    st.info("已鎖定使用：**gemini-2.5-pro**")
+    model_version = "gemini-2.5-pro"
 
     st.markdown("---")
     st.info("💡 系統模式：本地讀取\n\n程式會直接讀取同目錄下的 `meta_ads_targeting_database.md` 作為知識庫。")
