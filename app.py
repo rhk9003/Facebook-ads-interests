@@ -90,7 +90,7 @@ def get_gemini_response(api_key, model_name, db_context, user_input, user_files_
     ---
 
     輸出要求：
-    1. 請推薦 10 組受眾標籤。
+    1. 請推薦 20 組受眾標籤。
     2. 必須依照資料庫架構分類 (人口統計/興趣/行為)。
     3. **嚴格比對**：若你推薦的標籤存在於「標準受眾資料庫」中，請標記【✅ 資料庫驗證】；若標籤屬於資料中待驗證區域的請標記【⚠️ 潛在受眾】。
     4. 每一組建議請提供「戰略邏輯」(為什麼選這個？與產品的連結點為何？)。
@@ -98,8 +98,6 @@ def get_gemini_response(api_key, model_name, db_context, user_input, user_files_
     
     表格欄位格式：
     | 優先序 | 類別 | 受眾標籤 (Tag) | 來源驗證 | 戰略邏輯與應用場景 |
-
-    最後，請根據這些標籤提供一個「漏斗策略建議」，例如：冷受眾建議使用 [A] 排除 [B]。
     """
 
     try:
