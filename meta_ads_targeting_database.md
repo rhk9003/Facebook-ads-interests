@@ -1,6 +1,6 @@
 # **Meta (Facebook/Instagram) 廣告受眾標籤完整資料庫 (v2025.12)**
 
-文件狀態：已整合 Vixen Digital、LeadSync 資料與 **使用者實測廣告主題 (獨立分區)**
+文件狀態：已整合 Vixen Digital、LeadSync 資料與 **使用者實測廣告主題 (桌面版/手機版整合)**
 用途：廣告投放設定、受眾分析、Persona 建立
 結構：
 
@@ -117,44 +117,45 @@
 
 ## **4. 待驗證：個人廣告主題 (Source: Personal Ad Topics)**
 
-*資料來源：2025/12/19 截取自使用者個人檔案（Ad Preferences）。*
+*資料來源：2025/12/19 截取自使用者手機/桌面版個人檔案（Ad Preferences）。*
 *注意：此區為 Meta 對用戶的語意歸類，**不一定有完全對應的投放標籤名稱**。使用策略為：先在廣告後台搜尋該名稱，若無，則搜尋其英文同義詞或相關字。*
 
 ### **4.1 商業與專業服務 (Business & Professional)**
 
 | 類別 | 主題清單 (Topics) | 潛在對應興趣 (Potential Interests Mapping) |
 | :---- | :---- | :---- |
-| **行銷與品牌** | 廣告和行銷, 品牌建立和行銷, 社群媒體和社群媒體行銷, 行銷 | Advertising, Branding, Social media marketing |
-| **企業服務** | 企業顧問, 人力資源公司, 商業主題, 商業教育, 諮商和輔導（商業解決方案） | Business consultant, Human resources, Business, Business education |
-| **職涯與技能** | 職涯諮商, 專業商業技能, 專業訓練和專業認證, 口說和寫作語言課程, 教育和學習 | Career counseling, Professional development, Training |
-| **創業與資產** | 創業, 金融服務, 共同工作空間房地產 | Entrepreneurship, Financial services, Coworking |
+| **行銷與電子商務** | 廣告和行銷, 品牌建立和行銷, 社群媒體和社群媒體行銷, 整合行銷傳播和數位行銷模式, 數位行銷, 網路行銷, 電子商務, 零售業獎勵、集點和省錢應用程式 | Advertising, Branding, Digital marketing, E-commerce, Marketing strategy |
+| **企業與組織** | 企業顧問, 人力資源公司, 商業主題, 非政府組織, 諮商和輔導（商業解決方案）, 連鎖店, 法律和法律 (商業解決方案) | Business consultant, HR, NGO, Franchising, Corporate Law |
+| **金融與投資** | 金融服務, 財富管理服務, 個人理財, 投資和證券交易技術 | Financial services, Wealth management, Personal finance, Investing/Trading |
+| **職涯與技能** | 職涯諮商, 專業商業技能, 專業訓練和專業認證, 口說和寫作語言課程, 教育和學習, 英語 | Career counseling, Professional development, Languages |
 
 ### **4.2 科技與軟體 (Tech & Software)**
 
 | 類別 | 主題清單 (Topics) | 潛在對應興趣 (Potential Interests Mapping) |
 | :---- | :---- | :---- |
 | **生產力工具** | 商業 / 生產力軟體和應用程式, 雲端儲存軟體和應用程式, 網站設計 | Productivity software, Cloud storage, Web design |
-| **應用程式** | 商品探索及搜尋應用程式, 零售業獎勵、集點和省錢應用程式, 音樂和音訊串流應用程式 | Mobile apps, Loyalty programs, Music streaming |
-| **前沿技術** | 人工智慧, 電腦程式設計、程式編寫教學和證書 | Artificial intelligence, Computer programming |
+| **軟體開發** | 電腦程式設計、程式編寫教學和證書, 軟體開發、程式編寫開發, 人工智慧 | Software engineering, Programming, AI |
+| **應用與硬體** | 商品探索及搜尋應用程式, 購物和零售應用程式, 音樂和音訊串流應用程式, 空氣清淨設備 | Mobile apps, Retail apps, Air purifiers |
 
-### **4.3 創意與媒體 (Creative & Media)**
-
-| 類別 | 主題清單 (Topics) | 潛在對應興趣 (Potential Interests Mapping) |
-| :---- | :---- | :---- |
-| **設計與藝術** | 媒體業, 多媒體設計, 設計（視覺藝術）, 繪畫和插圖, 美術課 | Media, Multimedia, Visual arts, Illustration |
-| **內容創作** | Podcast, 部落格和影片部落格 | Podcasting, Blogging, Vlog |
-
-### **4.4 遊戲與娛樂 (Games & Entertainment)**
+### **4.3 房地產與空間 (Real Estate & Spaces)**
 
 | 類別 | 主題清單 (Topics) | 潛在對應興趣 (Potential Interests Mapping) |
 | :---- | :---- | :---- |
-| **特定類型遊戲** | 大型多人網路角色扮演電玩遊戲 (MMORPG), 即時策略電玩遊戲, 創建和戰鬥策略電玩遊戲 | MMORPG, Strategy games, RTS |
-| **影視娛樂** | 電影, 電視, 喜劇 | Movies, TV, Comedy |
+| **房產** | 共同工作空間房地產, 家庭房產, 商用不動產 | Coworking, Residential real estate, Commercial real estate |
+| **裝修** | 家庭裝潢、裝修和裝飾, 廚房工具和器具 | Home renovation, Interior design, Kitchenware |
 
-### **4.5 生活風格與其他 (Lifestyle & Misc)**
+### **4.4 醫療與健康 (Medical & Health)**
 
 | 類別 | 主題清單 (Topics) | 潛在對應興趣 (Potential Interests Mapping) |
 | :---- | :---- | :---- |
-| **餐飲與香氛** | 咖啡廳和烘焙工坊, 廚房工具和器具, 身體香氛 | Coffeehouses, Kitchenware, Fragrance |
-| **健康與休閒** | 健身和營養, 日本旅遊和觀光, 神秘主義 | Fitness, Japan tourism, Mysticism |
-| **日常服務** | 自駕車出租車輛招呼服務 (Rideshare), 家教服務, 服飾和服飾配件 | Uber/Lyft (Ridesharing), Tutoring, Clothing |
+| **身體保健** | 健身和營養, 瑜珈, 保健食品, 身體香氛 | Fitness, Yoga, Dietary supplements, Fragrance |
+| **醫療服務** | 醫療保健人員, 家庭醫生, 近視和雷射視力矯正手術 | Healthcare professionals, Family medicine, LASIK |
+
+### **4.5 遊戲、娛樂與生活 (Lifestyle & Misc)**
+
+| 類別 | 主題清單 (Topics) | 潛在對應興趣 (Potential Interests Mapping) |
+| :---- | :---- | :---- |
+| **遊戲** | 大型多人網路角色扮演電玩遊戲 (MMORPG), 第一人稱射擊電玩遊戲, 即時策略電玩遊戲, 創建和戰鬥策略電玩遊戲 | MMORPG, FPS games, RTS |
+| **閱讀與創作** | 書, 作者和作家, Podcast, 部落格和影片部落格, 繪畫和插圖 | Books, Authors, Podcasting, Blogging |
+| **旅遊與休閒** | 日本旅遊和觀光, 自助旅行和背包客旅行, 溫泉, 喜劇 | Japan tourism, Backpacking, Hot springs, Comedy |
+| **飲食與日常** | 咖啡廳和烘焙工坊, 食譜和烹飪愛好者, 午餐, 汽車、卡車和巴士, 女性服飾和服飾配件 | Cooking, Lunch, Vehicles, Women's clothing |
