@@ -1,6 +1,6 @@
-# **Meta (Facebook/Instagram) 廣告受眾標籤完整資料庫 (v2025.12)**
+# **Meta (Facebook/Instagram) 廣告受眾標籤完整資料庫 (v2026.01)**
 
-文件狀態：已整合 Vixen Digital、LeadSync 資料與 **使用者實測廣告主題 (桌面版/手機版整合)**
+文件狀態：已整合 Vixen Digital、LeadSync 資料與 **使用者實測廣告主題 (桌面版/手機版整合 - 2026/01 更新)**
 用途：廣告投放設定、受眾分析、Persona 建立
 結構：
 
@@ -117,45 +117,50 @@
 
 ## **4. 待驗證：個人廣告主題 (Source: Personal Ad Topics)**
 
-*資料來源：2025/12/19 截取自使用者手機/桌面版個人檔案（Ad Preferences）。*
-*注意：此區為 Meta 對用戶的語意歸類，**不一定有完全對應的投放標籤名稱**。使用策略為：先在廣告後台搜尋該名稱，若無，則搜尋其英文同義詞或相關字。*
+*資料來源：2025/12/19 及 2026/01/06 截取自使用者手機/桌面版個人檔案（Ad Preferences）。*
+*注意：此區表格的「主題清單」已轉換為 **Meta 英文對應術語**。請直接複製英文單字至廣告後台「詳細目標設定」搜尋。*
 
 ### **4.1 商業與專業服務 (Business & Professional)**
 
-| 類別 | 主題清單 (Topics) | 潛在對應興趣 (Potential Interests Mapping) |
+| 類別 | 主題清單 (Topics - English) | 原始中文來源 (Verification) |
 | :---- | :---- | :---- |
-| **行銷與電子商務** | 廣告和行銷, 品牌建立和行銷, 社群媒體和社群媒體行銷, 整合行銷傳播和數位行銷模式, 數位行銷, 網路行銷, 電子商務, 零售業獎勵、集點和省錢應用程式 | Advertising, Branding, Digital marketing, E-commerce, Marketing strategy |
-| **企業與組織** | 企業顧問, 人力資源公司, 商業主題, 非政府組織, 諮商和輔導（商業解決方案）, 連鎖店, 法律和法律 (商業解決方案) | Business consultant, HR, NGO, Franchising, Corporate Law |
-| **金融與投資** | 金融服務, 財富管理服務, 個人理財, 投資和證券交易技術 | Financial services, Wealth management, Personal finance, Investing/Trading |
-| **職涯與技能** | 職涯諮商, 專業商業技能, 專業訓練和專業認證, 口說和寫作語言課程, 教育和學習, 英語 | Career counseling, Professional development, Languages |
+| **工作模式與方案** | **Work from home** (WFH)<br>**Business Solutions**<br>**Business Consultant**<br>**Business Coaching**<br>**Corporate Law** | 在家工作<br>商務解決方案<br>企業顧問<br>諮商和輔導（商業解決方案）<br>法律和法律（商業解決方案） |
+| **教育與培訓** | **Business Education**<br>**Career Counseling**<br>**Professional Certification**<br>**Tutoring Services**<br>**Language Schools / Courses**<br>**Literacy Services** | 商業教育<br>職涯諮商<br>專業訓練和專業認證<br>家教服務<br>語言教學和課程<br>讀寫能力服務 |
+| **行銷與創業** | **Entrepreneurship**<br>**Branding**<br>**Marketing**<br>**Social Media Marketing**<br>**Integrated Marketing Communications** | 創業<br>品牌建立和行銷<br>行銷<br>社群媒體平台<br>整合行銷傳播 |
+| **組織與管理** | **Employment Agencies** (HR)<br>**Non-governmental Organizations (NGOs)**<br>**Franchising** | 人力資源公司<br>非政府組織<br>連鎖店 |
+| **金融與投資** | **Financial Services**<br>**Wealth Management**<br>**Personal Finance**<br>**Trading Strategy** | 金融服務<br>財富管理服務<br>個人理財<br>投資和證券交易技術 |
 
 ### **4.2 科技與軟體 (Tech & Software)**
 
-| 類別 | 主題清單 (Topics) | 潛在對應興趣 (Potential Interests Mapping) |
+| 類別 | 主題清單 (Topics - English) | 原始中文來源 (Verification) |
 | :---- | :---- | :---- |
-| **生產力工具** | 商業 / 生產力軟體和應用程式, 雲端儲存軟體和應用程式, 網站設計 | Productivity software, Cloud storage, Web design |
-| **軟體開發** | 電腦程式設計、程式編寫教學和證書, 軟體開發、程式編寫開發, 人工智慧 | Software engineering, Programming, AI |
-| **應用與硬體** | 商品探索及搜尋應用程式, 購物和零售應用程式, 音樂和音訊串流應用程式, 空氣清淨設備 | Mobile apps, Retail apps, Air purifiers |
+| **軟體與應用** | **Productivity Software**<br>**Mobile Apps**<br>**Music Streaming Services**<br>**Media Players**<br>**Cloud Storage** | 商業/生產力軟體和應用程式<br>軟體和應用程式<br>音樂和音訊串流應用程式<br>媒體播放器<br>雲端儲存軟體和應用程式 |
+| **設計與網路** | **Graphic Design**<br>**Web Design**<br>**E-commerce Platforms** | 平面設計<br>網站設計<br>電商平台 |
+| **硬體與開發** | **Computer Programming**<br>**Software Development**<br>**Artificial Intelligence (AI)**<br>**Air Purifiers** | 電腦程式設計<br>軟體開發<br>人工智慧<br>空氣清淨設備 |
 
-### **4.3 房地產與空間 (Real Estate & Spaces)**
+### **4.3 居家、房產與消費品 (Home, Real Estate & Goods)**
 
-| 類別 | 主題清單 (Topics) | 潛在對應興趣 (Potential Interests Mapping) |
+| 類別 | 主題清單 (Topics - English) | 原始中文來源 (Verification) |
 | :---- | :---- | :---- |
-| **房產** | 共同工作空間房地產, 家庭房產, 商用不動產 | Coworking, Residential real estate, Commercial real estate |
-| **裝修** | 家庭裝潢、裝修和裝飾, 廚房工具和器具 | Home renovation, Interior design, Kitchenware |
+| **寢具與衛浴** | **Mattresses**<br>**Bedding**<br>**Bathroom Accessories** | 床墊<br>床單組和寢具<br>浴室配件 |
+| **個人護理** | **Skincare**<br>**Toothpaste**<br>**Mouthwash**<br>**Oral Hygiene**<br>**Fragrances** | 護膚保養<br>牙膏<br>漱口水<br>口腔保健<br>身體香氛 |
+| **服飾與鞋類** | **Clothing & Accessories**<br>**Athletic Shoes**<br>**Shoes & Boots**<br>**Loafers**<br>**Shirts / Sleeveless Shirts** | 服飾和服飾配件<br>運動鞋<br>鞋子和靴子<br>樂福鞋<br>襯衫和無袖背心 |
+| **房產與裝修** | **Coworking Spaces**<br>**Residential Real Estate**<br>**Commercial Real Estate**<br>**Home Renovation**<br>**Kitchenware** | 共同工作空間房地產<br>家庭房產<br>商用不動產<br>家庭裝潢<br>廚房工具和器具 |
 
 ### **4.4 醫療與健康 (Medical & Health)**
 
-| 類別 | 主題清單 (Topics) | 潛在對應興趣 (Potential Interests Mapping) |
+| 類別 | 主題清單 (Topics - English) | 原始中文來源 (Verification) |
 | :---- | :---- | :---- |
-| **身體保健** | 健身和營養, 瑜珈, 保健食品, 身體香氛 | Fitness, Yoga, Dietary supplements, Fragrance |
-| **醫療服務** | 醫療保健人員, 家庭醫生, 近視和雷射視力矯正手術 | Healthcare professionals, Family medicine, LASIK |
+| **身心健康** | **Meditation**<br>**Healthy Habits / Wellness**<br>**Fitness and nutrition**<br>**Yoga** | 冥想和專注<br>健康生活<br>健身和營養<br>瑜珈 |
+| **醫療服務** | **Hospitals / Medical Centers**<br>**Medicine / Medical Treatment**<br>**Healthcare Professionals**<br>**Family Medicine**<br>**LASIK** | 醫院和醫療中心<br>醫學治療和藥物<br>醫療保健人員<br>家庭醫生<br>近視和雷射視力矯正手術 |
+| **特殊設備/食品** | **Vibration Exercise Machines**<br>**Energy Drinks / Shakes**<br>**Dietary Supplements** | 震動運動機<br>能量飲料、能量奶昔和預拌粉<br>保健食品 |
 
-### **4.5 遊戲、娛樂與生活 (Lifestyle & Misc)**
+### **4.5 興趣、娛樂與生活風格 (Lifestyle & Interests)**
 
-| 類別 | 主題清單 (Topics) | 潛在對應興趣 (Potential Interests Mapping) |
+| 類別 | 主題清單 (Topics - English) | 原始中文來源 (Verification) |
 | :---- | :---- | :---- |
-| **遊戲** | 大型多人網路角色扮演電玩遊戲 (MMORPG), 第一人稱射擊電玩遊戲, 即時策略電玩遊戲, 創建和戰鬥策略電玩遊戲 | MMORPG, FPS games, RTS |
-| **閱讀與創作** | 書, 作者和作家, Podcast, 部落格和影片部落格, 繪畫和插圖 | Books, Authors, Podcasting, Blogging |
-| **旅遊與休閒** | 日本旅遊和觀光, 自助旅行和背包客旅行, 溫泉, 喜劇 | Japan tourism, Backpacking, Hot springs, Comedy |
-| **飲食與日常** | 咖啡廳和烘焙工坊, 食譜和烹飪愛好者, 午餐, 汽車、卡車和巴士, 女性服飾和服飾配件 | Cooking, Lunch, Vehicles, Women's clothing |
+| **遊戲** | **MMORPG**<br>**Fighting Games**<br>**FPS Games**<br>**Real-time Strategy (RTS)**<br>**Gambling (Real Money)** | 大型多人網路角色扮演電玩遊戲<br>格鬥電玩遊戲<br>第一人稱射擊電玩遊戲<br>即時策略電玩遊戲<br>真錢博奕 |
+| **神秘與信仰** | **Mysticism**<br>**Psychics / Divination** | 神秘主義<br>通靈占卜 |
+| **食物與飲品** | **Cooking Schools / Classes**<br>**Seafood**<br>**Meat**<br>**Cafés**<br>**Bakeries** | 烹飪課程<br>海鮮<br>肉類和海鮮<br>咖啡廳<br>烘焙工坊 |
+| **娛樂與閱讀** | **Comedy Movies**<br>**Blogs / Vlogs**<br>**Self-help Books**<br>**Podcasts**<br>**Painting / Illustration** | 喜劇電影<br>部落格和影片部落格<br>自助書籍<br>Podcast<br>繪畫和插圖 |
+| **旅遊與其他** | **Travel Agencies**<br>**Japan Tourism**<br>**Backpacking**<br>**Hot Springs**<br>**Weddings**<br>**Golf Equipment** | 旅行社訂房和預約服務<br>日本旅遊和觀光<br>自助旅行<br>溫泉<br>婚禮<br>高爾夫球裝備 |
